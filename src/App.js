@@ -125,7 +125,7 @@ function Navigation() {
       <Container>
         <Navbar.Collapse id="navbar">
           <Nav>
-          <NavLink to="/react-portfolio/" role="button" className={"nav-link mx-2"}>Home</NavLink>
+          <NavLink to="/react-portfolio" role="button" className={"nav-link mx-2"}>Home</NavLink>
             <NavLink to="/portfolio" role="button" className={"nav-link mx-2"}>Portfolio</NavLink>
             <NavLink to="/resume" role="button" className={"nav-link mx-2"}>Resume</NavLink>
             <NavLink to="/contact" role="button" className={"nav-link mx-2"}>Contact</NavLink>
@@ -146,7 +146,8 @@ function App() {
       <div className='mainBody'>
 
         <Routes> 
-          <Route path="/react-portfolio/" element={<About />} />
+          <Route path="/" element={<About />} />
+          <Route path="/react-portfolio" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
